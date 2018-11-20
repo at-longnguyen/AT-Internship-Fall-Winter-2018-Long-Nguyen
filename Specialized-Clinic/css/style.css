@@ -103,7 +103,7 @@ li.banner-item > a:hover {
   margin: 0px;
 }
 .sub-health-list{
-  padding-top: 15px;
+  padding: 15px;
 }
 .sub-health-item-link{
   text-decoration: none;
@@ -126,10 +126,13 @@ li.sub-health-item > a:hover {
   margin-top: 10px;
   display: block;
 }
-.form-input-control{
+.form-control{
   padding: 7px;
-  width: 173px;
-  height: 21px;
+}
+.form-input-control{
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
 }
 .btn-send{
   margin-bottom: 5px;
@@ -145,13 +148,18 @@ li.sub-health-item > a:hover {
 li.main-service-item{
   display: inline;
 }
-ul.main-service-list {
+.main-service-list{
   overflow: hidden;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-li.main-service-item {
+.read-more-icon{
+  float: right;
+  width: 15px;
+  height: 15px;
+}
+li.main-service-item{
   float: left;
   width: 30%;
   padding: 10px;
