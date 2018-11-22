@@ -58,7 +58,7 @@ li.header-menu-item{
   text-decoration: none;
   color: black;
 }
-li.header-menu-item > a:hover {
+li.header-menu-item > a:hover{
   color: #A5A7E9;
 }
 .header-sociality{
@@ -70,7 +70,12 @@ li.banner-item{
   display: inline;
 }
 .banner-list{
-  float: left;
+  background-image: url('../images/images1.png');
+  min-height: 155px;
+  padding: 0px;
+}
+.banner-list .container{
+  padding-top: 70px;
 }
 .banner-link{
   text-decoration: none;
@@ -78,10 +83,6 @@ li.banner-item{
 }
 li.banner-item > a:hover {
   color: #A5A7E9;
-}
-.banner-list{
-  position: absolute;
-  top:200px;
 }
 /* main-body */
 .sidebar{
@@ -96,7 +97,7 @@ li.banner-item > a:hover {
   padding: 5px;
   padding-left: 20px;
 }
-.health-item-hypen , .health-item-plus{
+.health-item-hypen, .health-item-plus{
   float: right;
 }
 .health-item-title{
@@ -147,6 +148,7 @@ li.sub-health-item > a:hover {
 }
 li.main-service-item{
   display: inline;
+  margin-left: 3px;
 }
 .main-service-list{
   overflow: hidden;
@@ -172,6 +174,8 @@ li.main-service-item{
 .page-footer{
   background-color: #A6D5CC;
   height: 250px;
+  width: 100%;
+  color: white;
 }
 .footer-content-list li.footer-content-item{
   float: left;
