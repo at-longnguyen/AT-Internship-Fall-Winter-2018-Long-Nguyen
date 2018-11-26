@@ -37,12 +37,12 @@
           var res=c.replace("*",arr0[i])+"-";
           result+=res;
         }
-      } else if(sum%3===1){
+      }else if(sum%3===1){
         for(var i=0;i<arr2.length; i++){
           var res=c.replace("*",arr2[i])+"-";
           result+=res;
         }
-      } else{
+      }else{
         for(var i=0;i<arr1.length; i++){
           var res=c.replace("*",arr1[i])+"-";
           result+=res;
@@ -58,26 +58,30 @@
       var result = [];
       var c = document.getElementById("InputE").value;
       var arr=c.slice(0,c.length);
-      for(var i=0;i<c.length; i++){
-        if(arr[i]!=='*'){
-          sum+=parseInt(arr[i]);
+      if(c[c.length-1]%2==0 || c[c.length-1]=='*'){
+        for(var i=0;i<c.length; i++){
+          if(arr[i]!=='*'){
+            sum+=parseInt(arr[i]);
+          }
         }
+        if(sum%3===0){
+          for(var i=0;i<arr0.length; i++){
+            var res=c.replace("*",arr0[i])+"-";
+            result+=res;
+          }
+        }else if(sum%3===1){
+          for(var i=0;i<arr2.length; i++){
+            var res=c.replace("*",arr2[i])+"-";
+            result+=res;
+          }
+        }else{
+          for(var i=0;i<arr1.length; i++){
+            var res=c.replace("*",arr1[i])+"-";
+            result+=res;
+          }
+        }
+        alert(result);
+      }else{
+        alert('Nhap lai di ban');
       }
-      if(sum%3===0){
-        for(var i=0;i<arr0.length; i++){
-          var res=c.replace("*",arr0[i])+"-";
-          result+=res;
-        }
-      } else if(sum%3===1){
-        for(var i=0;i<arr2.length; i++){
-          var res=c.replace("*",arr2[i])+"-";
-          result+=res;
-        }
-      } else{
-        for(var i=0;i<arr1.length; i++){
-          var res=c.replace("*",arr1[i])+"-";
-          result+=res;
-        }
-      }
-      alert(result);
     }
