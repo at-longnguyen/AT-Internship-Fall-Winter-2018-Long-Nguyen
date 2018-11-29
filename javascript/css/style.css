@@ -1,0 +1,7 @@
+  .calculation-list, .calculation-list-1, .calculation-list-2, .calculation-list-3{
+    display: inline;
+  }
+  .calculation-list li, .calculation-list-1 li, .calculation-list-2 li, .calculation-list-3 li{
+    padding-bottom: 10px;
+  }
+  
