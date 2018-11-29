@@ -1,0 +1,38 @@
+body{
+   font-size: 1em;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.header-top{
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 5px;
+}
+.container{
+  max-width: 1300px;
+  margin: 0 10%;
+  padding-top:10px;
+}
+.clearfix:after{
+  content: "";
+  clear: both;
+  display:block;
+}
+.header-content-left{
+  float: left;
+  width: 60%;
+}
+.logo{
+  width: 20%;
+  height: 20%;
+}
+.header-search{
+  float: right;
+  margin-top: 15px;
+}
+.search{
+  height: 30px;
+  width: 300px;
+}
+.btn-search{
+  height: 30px;
+}
+
