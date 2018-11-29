@@ -87,11 +87,15 @@
   .header-menu-content{
     display: none;
   }
-  .header-sociality::before{
+  .header-sociality{
+    display: contents;
+  }
+  .header-sociality::after{
     content: url('../images/menu.png');
     clear: both;
-    display:block;
-    float: left;
+    display: block;
+    float: right;
+    padding-bottom: 5px;
   }
   /* page-main */
   .sidebar{
@@ -129,5 +133,18 @@
   }
   .footer-content-item{
     padding-bottom: 15px;
+  }
+  .footer-top{
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+  .footer-content-list{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  .director-name{
+    display: none;
   }
 }
